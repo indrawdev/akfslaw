@@ -7,6 +7,7 @@ use App\Partner;
 
 class PartnerController extends Controller
 {
+
     public function index()
     {
     
@@ -19,7 +20,14 @@ class PartnerController extends Controller
 
     public function store(Request $request)
     {
-        //
+        $partner = new Partner();
+        $partner->en_name = $request->en_name;
+        $partner->slug = $request->en_name;
+        $partner->en_description = $request->en_description;
+        $partner->id_name = $request->id_name;
+        $partner->id_description = $request->id_description;
+
+
     }
 
     public function show($slug)
@@ -35,7 +43,12 @@ class PartnerController extends Controller
 
     public function update(Request $request, $id)
     {
-        //
+        $partner = Partner::findOrFail($id);
+        $partner->en_name = $request->en_name;
+        $partner->slug = $request->en_name;
+        $partner->en_description = $request->en_description;
+        $partner->id_name = $request->id_name;
+        $partner->id_description = $request->id_description;
     }
 
     public function destroy($id)
