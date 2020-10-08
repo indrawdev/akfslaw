@@ -18,6 +18,7 @@ class CreatePostsTable extends Migration
             $table->unsignedBigInteger('category_id');
             $table->unsignedBigInteger('user_id');
             $table->string('slug')->unique();
+            $table->string('icon')->nullable();
             $table->string('en_title');
             $table->string('id_title');
             $table->text('en_content');

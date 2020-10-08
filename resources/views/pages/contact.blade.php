@@ -65,7 +65,7 @@
                         </div>
                         <div class="content">
                             <h5><a href="#">@lang('contact.email')</a></h5>
-                            <p>info@bdCoder.com<br>set-info@bdCoder.com</p>
+                            <p>support@akfslaw.com</p>
                         </div>
                     </div>
                 </div>

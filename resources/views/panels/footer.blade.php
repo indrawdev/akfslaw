@@ -5,7 +5,7 @@
                 <div class="col col-lg-4 col-md-3 col-sm-6">
                     <div class="widget about-widget">
                         <div class="logo widget-title">
-                            <img src="images/footer-logo.png" alt>
+                            <img src="{{ asset('images/akfs-lawfirm.png') }}" alt>
                         </div>
                         @if (App::isLocale('en'))
                             {!! $introProfile->en_content !!}

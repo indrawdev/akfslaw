@@ -130,87 +130,29 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="service-slider owl-carousel service-wrapper">
+                        @foreach($services as $row)
                         <div class="item">
                             <div class="service-post">
                                 <div class="icon">
-                                    <i class="flaticon-thief"></i>
+                                    <i class="{{ $row->icon }}"></i>
                                 </div>
-                                <h4><a href="#">Identity Theft</a></h4>
-                                <p>contrary to popular belief, Lorem Ipsum is not simply random text.</p>
+                                <h4>
+                                    <a href="{{ url('service/' . $row->slug) }}">
+                                        @if (App::isLocale('en'))
+                                            {{ $row->en_title }}
+                                        @else
+                                            {{ $row->id_title }}
+                                        @endif
+                                    </a>
+                                </h4>
+                                @if (App::isLocale('en'))
+                                    {{ Str::limit(strip_tags($row->en_content), 30) }}
+                                @else
+                                    {{ Str::limit(strip_tags($row->id_content), 30) }}
+                                @endif
                             </div>
                         </div>
-                        <div class="item">
-                            <div class="service-post">
-                                <div class="icon">
-                                    <i class="flaticon-law"></i>
-                                </div>
-                                <h4><a href="#">Bankruptcy law</a></h4>
-                                <p>contrary to popular belief, Lorem Ipsum is not simply random text.</p>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="service-post">
-                                <div class="icon">
-                                    <i class="flaticon-parents"></i>
-                                </div>
-                                <h4><a href="#">Family Law</a></h4>
-                                <p>contrary to popular belief, Lorem Ipsum is not simply random text.</p>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="service-post">
-                                <div class="icon">
-                                    <i class="flaticon-wounded"></i>
-                                </div>
-                                <h4><a href="#">Personal Injury</a></h4>
-                                <p>contrary to popular belief, Lorem Ipsum is not simply random text.</p>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="service-post">
-                                <div class="icon">
-                                    <i class="flaticon-courthouse"></i>
-                                </div>
-                                <h4><a href="#">Real Estate Law</a></h4>
-                                <p>contrary to popular belief, Lorem Ipsum is not simply random text.</p>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="service-post">
-                                <div class="icon">
-                                    <i class="flaticon-shield"></i>
-                                </div>
-                                <h4><a href="#">Corporate Security</a></h4>
-                                <p>contrary to popular belief, Lorem Ipsum is not simply random text.</p>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="service-post">
-                                <div class="icon">
-                                    <i class="flaticon-libra"></i>
-                                </div>
-                                <h4><a href="#">Real Estate Law</a></h4>
-                                <p>contrary to popular belief, Lorem Ipsum is not simply random text.</p>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="service-post">
-                                <div class="icon">
-                                    <i class="flaticon-burglar"></i>
-                                </div>
-                                <h4><a href="#">Corporate Security</a></h4>
-                                <p>contrary to popular belief, Lorem Ipsum is not simply random text.</p>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="service-post">
-                                <div class="icon">
-                                    <i class="flaticon-gun"></i>
-                                </div>
-                                <h4><a href="#">gun Security</a></h4>
-                                <p>contrary to popular belief, Lorem Ipsum is not simply random text.</p>
-                            </div>
-                        </div>
+                        @endforeach
                     </div>
                 </div>
             </div>
@@ -222,8 +164,8 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-title">
-                        <h6>Our Attorney</h6>
-                        <h4>Meet Our Attorney</h4>
+                        <h6>Partner</h6>
+                        <h4>Meet Our Partner</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae id aut ratione, qui debitis reprehenderit numquam et vitae.</p>
                     </div>
                 </div>
@@ -231,28 +173,20 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="attorney-grids attorney-slider owl-carousel">
+                        @foreach($partners as $row)
                         <div class="item">
                             <div class="grid">
                                 <div class="thumb">
-                                    <img src="images/team/1.jpg" alt="">
+                                    <a href="{{ url('partner/' . $row->slug) }}">
+                                        <img src="{{ asset('images/' . $row->photo) }}" alt="{{ $row->en_name }}">
+                                    </a>
                                 </div>
                                 <div class="content">
-                                    <h3>Emma John</h3>
-                                    <p>CEO & Founder</p>
+                                    <h3>{{ $row->en_name }}</h3>
                                 </div>
                             </div>
                         </div>
-                        <div class="item">
-                            <div class="grid">
-                                <div class="thumb">
-                                    <img src="images/team/2.jpg" alt="">
-                                </div>
-                                <div class="content">
-                                    <h3>Noah Ava</h3>
-                                    <p>CEO & Founder</p>
-                                </div>
-                            </div>
-                        </div>
+                        @endforeach
                     </div>
                 </div>
             </div>
@@ -264,7 +198,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-title st-2">
-                        <h6>Blog Post</h6>
+                        <h6>Publication</h6>
                         <h4>Latest Blog Post</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae id aut ratione, qui debitis reprehenderit numquam et vitae.</p>
                     </div>

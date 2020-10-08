@@ -32,7 +32,7 @@
             <div class="row about-wrapper style-2"> 
                 <div class="col-lg-5">
                     <div class="thumb">
-                        <img src="images/resources/abut-1.jpg" alt="">
+                        <img src="{{ asset('images/' . $partner->photo) }}" alt="">
                     </div>
                 </div>
                 <div class="col-lg-7">
@@ -45,7 +45,7 @@
                             <h4>{{ $partner->id_name }}</h4>
                             {!! $partner->id_description !!}
                         @endif
-                        <img src="images/icons/2.png" alt="" style="width: 170px;">
+                        <img src="{{ asset('images/' . $partner->signature) }}" alt="" style="width: 170px;">
                     </div>
                 </div>
             </div>

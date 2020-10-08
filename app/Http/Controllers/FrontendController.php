@@ -17,13 +17,13 @@ class FrontendController extends Controller
         $profile = Profile::findOrFail(1);
         $about = Profile::findOrFail(2);
         $partners = Partner::all();
-        $posts = Post::with(['category'])->get();
+        $services = Post::where('category_id', '1')->get();
         
         return view('pages.front', [
             'profile' => $profile, 
             'about' => $about,
             'partners' => $partners, 
-            'posts' => $posts
+            'services' => $services
         ]);
     }
 

@@ -4,7 +4,7 @@
             <div class="container">
                 <!-- header dropdown buttons end-->
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    <img id="logo_img" src="{{ asset('images/footer-logo.png') }}" alt=""></a> 
+                    <img id="logo_img" src="{{ asset('images/akfs-lawfirm.png') }}" alt=""></a> 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse-1" aria-controls="navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>

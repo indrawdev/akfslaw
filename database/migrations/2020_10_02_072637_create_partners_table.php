@@ -22,6 +22,7 @@ class CreatePartnersTable extends Migration
             $table->text('en_description');
             $table->text('id_description');
             $table->string('photo');
+            $table->string('signature');
             $table->timestamps();
 
             $table->foreign('user_id')->references('id')->on('users');
