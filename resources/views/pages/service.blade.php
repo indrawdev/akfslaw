@@ -1,5 +1,7 @@
 @extends('layouts.frontend')
 
+@section('title', __('menu.our-service'))
+
 @section('content')
 
     <section class="inner-area">

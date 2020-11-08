@@ -1,5 +1,7 @@
 @extends('layouts.frontend')
 
+@section('title', __('menu.about'))
+
 @section('content')
 
     <section class="inner-area">
@@ -21,10 +23,14 @@
 
     <section class="about-section">
         <div class="container">
-            <div class="row about-wrapper style-2"> 
+            <div class="row about-wrapper"> 
                 <div class="col-lg-5">
                     <div class="thumb">
                         <img src="{{ asset('images/resources/abut-1.jpg') }}" alt="">
+                        <div class="text">
+                            <h4>welcome to law</h4>
+                            <h6>Need any help?</h6>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-7">

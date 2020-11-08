@@ -4,6 +4,8 @@ namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\View;
+use Illuminate\Support\Facades\Schema;
+
 
 use App\Partner;
 use App\Post;
@@ -28,6 +30,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        Schema::defaultStringLength(191);
+
         $menuPartner   = Partner::all();
         $menuCategory  = Post::select('en_title', 'id_title', 'slug')->where('category_id', '=', 1)->get();
         $introProfile  = Profile::findOrFail(1);

@@ -10,12 +10,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>@yield('title') | {{ config('app.name', 'Laravel') }}</title>
 
     @include('panels/styles')
 
     <!-- Favicon -->
-    <link href="images/favicon.png" rel="shortcut icon" type="image/png">
+    <link href="{{ asset('images/favicon.png') }}" rel="shortcut icon" type="image/png">
 
   </head>
 

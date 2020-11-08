@@ -8,7 +8,9 @@ return [
     'website' => 'Website',
     'messages' => 'Tulis Pesan Anda....',
     'address' => 'Alamat',
+    'send-message' => 'Kirim Pesan',
+    'contact-address' => 'Alamat Kami',
     'business-hours' => 'Jam Kerja',
-    'send-message' => 'Kirim Pesan'
-
+    'hours' => 'Senin-Jumat: 10 s/d 17 <br>Sabtu: 11 s/d 15'
+    
 ];

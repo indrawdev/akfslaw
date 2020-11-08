@@ -1,5 +1,7 @@
 @extends('layouts.frontend')
 
+@section('title', __('menu.contact'))
+
 @section('content')
 
     <section class="inner-area">
@@ -47,7 +49,7 @@
                         </div>
                         <div class="content">
                             <h5><a href="#">@lang('contact.address')</a></h5>
-                            <p> 325, Dreem streen Borgona<br> united, London.</p>
+                            <p>Business Park Kebon Jeruk Blok A No. 9. Jl. Meruya Ilir Raya No. 88, Meruya Utara, Kembangan<br>Jakarta 11620, Indonesia</p>
                         </div>
                     </div>
                     <div class="contact-info-box">
@@ -56,7 +58,7 @@
                         </div>
                         <div class="content">
                             <h5><a href="#">@lang('contact.business-hours')</a></h5>
-                            <p>Monday-Friday: 10am to 8pm <br>Saturday: 11am to 3pm</p>
+                            <p>@lang('contact.hours')</p>
                         </div>
                     </div>
                     <div class="contact-info-box">
@@ -64,7 +66,7 @@
                             <i class="icofont-ui-email"></i>
                         </div>
                         <div class="content">
-                            <h5><a href="#">@lang('contact.email')</a></h5>
+                            <h5><a href="mailto:support@akfslaw.com">@lang('contact.email')</a></h5>
                             <p>support@akfslaw.com</p>
                         </div>
                     </div>

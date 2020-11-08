@@ -5,19 +5,19 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 
+use App\Profile;
 use App\Partner;
 use App\Post;
-use App\Profile;
 
 class FrontendController extends Controller
 {
 
     public function index()
     {
-        $profile = Profile::findOrFail(1);
-        $about = Profile::findOrFail(2);
-        $partners = Partner::all();
-        $services = Post::where('category_id', '1')->get();
+        $profile    = Profile::find(1);
+        $about      = Profile::find(2);
+        $partners   = Partner::all();
+        $services   = Post::where('category_id', '1')->get();
         
         return view('pages.front', [
             'profile' => $profile, 
@@ -29,7 +29,7 @@ class FrontendController extends Controller
 
     public function about()
     {
-        $profile = Profile::findOrFail(2);
+        $profile = Profile::find(2);
         return view('pages.about', ['profile' => $profile]);
     }
 
@@ -52,7 +52,7 @@ class FrontendController extends Controller
 
     public function contact()
     {
-        $profile = Profile::findOrFail(3);
+        $profile = Profile::find(3);
         return view('pages.contact', ['profile' => $profile]);
     }
 }

@@ -20,6 +20,8 @@ Route::get('/service/{slug}', 'FrontendController@service');
 Route::get('/publication', 'FrontendController@publication')->name('publication');
 Route::get('/contact', 'FrontendController@contact')->name('contact');
 
+//Route::get('/lang/{language}', 'LocalizationController@switch')->name('localization.switch');
+
 // backend
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/categories/{slug}', 'CategoryController@show');

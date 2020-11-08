@@ -2,7 +2,6 @@
         <ol class="carousel-indicators">
             <li data-target="#home-st1" data-slide-to="0" class="active"></li>
             <li data-target="#home-st1" data-slide-to="1"></li>
-            <li data-target="#home-st1" data-slide-to="2"></li>
         </ol>
         <div class="carousel-inner" role="listbox">
             <div class="carousel-item active fullHeight">
@@ -16,10 +15,10 @@
                             <h1>We Fight for Right</h1>
                         </div>
                         <div class="p-text">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus maiores quas nemo, rerum vitae cumque ipsa id aut mollitia soluta! Expedita quod reprehenderit possimus iste repellendus natus consequatur.</p>
+                        <p>To Be A Credible, Professional, And Reliable Law Office Providing Maximum Solution For The Client's Needs.</p>
                         </div>
                         <div class="btn">
-                            <a class="home-btn" href="#">Contact Us</a>
+                            <a class="home-btn" href="{{ route('contact') }}">Contact Us</a>
                         </div>
                     </div>
                     <div class="img">
@@ -38,32 +37,10 @@
                             <h1>We Fight for Right</h1>
                         </div>
                         <div class="p-text">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus maiores quas nemo, rerum vitae cumque ipsa id aut mollitia soluta! Expedita quod reprehenderit possimus iste repellendus natus consequatur.</p>
+                            <p>To Provide Legal Understanding And Total Solutions For The Legal Needs Of Clients.</p>
                         </div>
                         <div class="btn">
-                            <a class="home-btn" href="#">Contact Us</a>
-                        </div>
-                    </div>
-                    <div class="img">
-                        <img src="images/slider/lawyer-1.png" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item fullHeight">
-                <img src="images/slider/1.jpg" alt="Third slide">
-                <div class="slide-caption">
-                    <div class="text">
-                        <div class="sub-title">
-                            <h4>Need any help?</h4>
-                        </div>
-                        <div class="title">
-                            <h1>We Fight for Right</h1>
-                        </div>
-                        <div class="p-text">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus maiores quas nemo, rerum vitae cumque ipsa id aut mollitia soluta! Expedita quod reprehenderit possimus iste repellendus natus consequatur.</p>
-                        </div>
-                        <div class="btn">
-                            <a class="home-btn" href="#">Contact Us</a>
+                            <a class="home-btn" href="{{ route('contact') }}">Contact Us</a>
                         </div>
                     </div>
                     <div class="img">
@@ -72,11 +49,11 @@
                 </div>
             </div>
         </div>
-        <a class="carousel-control-prev" href="#home-st1" role="button" data-slide="prev">
+        <a class="carousel-control-prev" href="# role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
         </a>
-        <a class="carousel-control-next" href="#home-st1" role="button" data-slide="next">
+        <a class="carousel-control-next" href="#" role="button" data-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
         </a>
@@ -87,7 +64,6 @@
             <div class="row about-wrapper">
                 <div class="col-lg-5">
                     <div class="thumb">
-                        <img src="images/icons/1.png" alt="" style="width: 170px;">
                         <div class="text">
                             <h4>welcome to law</h4>
                             <h6>Need any help?</h6>
