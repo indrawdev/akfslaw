@@ -3,9 +3,9 @@
 return [
 
     'home' => 'Beranda',
-    'about' => 'Tentang',
-    'our-people' => 'Rekan',
-    'our-service' => 'Layanan',
+    'about' => 'Tentang Kami',
+    'our-people' => 'Rekan Kami',
+    'our-service' => 'Layanan Kami',
     'publication' => 'Publikasi',
     'contact' => 'Kontak',
 

@@ -67,8 +67,20 @@
 
                     </ul>
 
+                    <ul>
+                        <li>
+                            <a href="{{ url('/lang/en') }}">
+                                <img src="{{ asset('images/icons/united-states.png') }}" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{ url('/lang/id') }}">
+                                <img src="{{ asset('images/icons/indonesia.png') }}" />
+                            </a>
+                        </li>
+                    </ul>
                     <!-- header dropdown buttons -->
-                    <div class="dropdown-buttons">
+                    <!-- <div class="dropdown-buttons">
                         <div class="btn-group menu-search-box">
                             <button type="button" class="btn dropdown-toggle" id="header-drop-3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icofont-search"></i></button>
                             <ul class="dropdown-menu dropdown-menu-right dropdown-animation" aria-labelledby="header-drop-3">
@@ -82,7 +94,7 @@
                                 </li>
                             </ul>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- main-menu end -->
 
                 </div>

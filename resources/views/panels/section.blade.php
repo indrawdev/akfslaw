@@ -18,7 +18,7 @@
                         <p>To Be A Credible, Professional, And Reliable Law Office Providing Maximum Solution For The Client's Needs.</p>
                         </div>
                         <div class="btn">
-                            <a class="home-btn" href="{{ route('contact') }}">Contact Us</a>
+                            <a class="home-btn" href="{{ url('/contact') }}">Contact Us</a>
                         </div>
                     </div>
                     <div class="img">
@@ -40,7 +40,7 @@
                             <p>To Provide Legal Understanding And Total Solutions For The Legal Needs Of Clients.</p>
                         </div>
                         <div class="btn">
-                            <a class="home-btn" href="{{ route('contact') }}">Contact Us</a>
+                            <a class="home-btn" href="{{ url('/contact') }}">Contact Us</a>
                         </div>
                     </div>
                     <div class="img">
@@ -180,7 +180,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row blog-wrapper">
+            <!-- <div class="row blog-wrapper">
                 <div class="col-lg-4">
                     <div class="blog-post">
                         <div class="thumb">
@@ -232,6 +232,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </section>
