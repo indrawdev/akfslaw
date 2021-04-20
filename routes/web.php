@@ -19,6 +19,7 @@ Route::get('/partner/{slug}', 'FrontendController@partner');
 Route::get('/service/{slug}', 'FrontendController@service');
 Route::get('/publication', 'FrontendController@publication')->name('publication');
 Route::get('/contact', 'FrontendController@contact')->name('contact');
+Route::post('/contact', 'ContactController@store');
 
 Route::get('/lang/{language}', 'LocalizationController@switch')->name('localization.switch');
 

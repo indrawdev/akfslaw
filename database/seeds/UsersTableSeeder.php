@@ -6,17 +6,17 @@ use Illuminate\Support\Facades\Hash;
 
 class UsersTableSeeder extends Seeder
 {
-    /**
-     * Run the database seeds.
-     *
-     * @return void
-     */
-    public function run()
-    {
-        DB::table('users')->insert([
-            'name' => 'Indra Pramana',
-            'email' => 'idprama@gmail.com',
-            'password' => Hash::make('password'),
-        ]);
-    }
+	/**
+	 * Run the database seeds.
+	 *
+	 * @return void
+	 */
+	public function run()
+	{
+		DB::table('users')->insert([
+			'name' => 'Indra Pramana',
+			'email' => 'idprama@gmail.com',
+			'password' => Hash::make('password'),
+		]);
+	}
 }

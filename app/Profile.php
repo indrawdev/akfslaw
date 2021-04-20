@@ -7,8 +7,8 @@ use Illuminate\Support\Str;
 
 class Profile extends Model
 {
-    public function setSlugAttribute($value)
-    {
-        $this->attributes['slug'] = Str::slug($value);
-    }
+	public function setSlugAttribute($value)
+	{
+		$this->attributes['slug'] = Str::slug($value);
+	}
 }

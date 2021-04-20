@@ -7,58 +7,58 @@ use App\Post;
 
 class PostController extends Controller
 {
-    public function index()
-    {
-        //
-    }
+	public function index()
+	{
+		//
+	}
 
-    public function create()
-    {
-        //
-    }
+	public function create()
+	{
+		//
+	}
 
-    public function store(Request $request)
-    {
-        //
-    }
+	public function store(Request $request)
+	{
+		//
+	}
 
-    public function show($slug)
-    {
-        $post = Post::where('slug', '=', $slug)->firstOrFail();
-        return view('welcome', $post);
-    }
+	public function show($slug)
+	{
+		$post = Post::where('slug', '=', $slug)->firstOrFail();
+		return view('welcome', $post);
+	}
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
-    {
-        //
-    }
+	/**
+	 * Show the form for editing the specified resource.
+	 *
+	 * @param  int  $id
+	 * @return \Illuminate\Http\Response
+	 */
+	public function edit($id)
+	{
+		//
+	}
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, $id)
-    {
-        //
-    }
+	/**
+	 * Update the specified resource in storage.
+	 *
+	 * @param  \Illuminate\Http\Request  $request
+	 * @param  int  $id
+	 * @return \Illuminate\Http\Response
+	 */
+	public function update(Request $request, $id)
+	{
+		//
+	}
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy($id)
-    {
-        //
-    }
+	/**
+	 * Remove the specified resource from storage.
+	 *
+	 * @param  int  $id
+	 * @return \Illuminate\Http\Response
+	 */
+	public function destroy($id)
+	{
+		//
+	}
 }

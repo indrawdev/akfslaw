@@ -5,7 +5,7 @@ return [
     'first-name' => 'Nama Depan',
     'last-name' => 'Nama Belakang',
     'email' => 'Surel',
-    'website' => 'Website',
+    'phone' => 'Telepon',
     'messages' => 'Tulis Pesan Anda....',
     'address' => 'Alamat',
     'send-message' => 'Kirim Pesan',

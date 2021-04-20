@@ -13,28 +13,29 @@ use App\Profile;
 
 class AppServiceProvider extends ServiceProvider
 {
-    /**
-     * Register any application services.
-     *
-     * @return void
-     */
-    public function register()
-    {
-        //
-    }
+	/**
+	 * Register any application services.
+	 *
+	 * @return void
+	 */
+	public function register()
+	{
+		//
+	}
 
-    /**
-     * Bootstrap any application services.
-     *
-     * @return void
-     */
-    public function boot()
-    {
-        Schema::defaultStringLength(191);
+	/**
+	 * Bootstrap any application services.
+	 *
+	 * @return void
+	 */
+	public function boot()
+	{
+		Schema::defaultStringLength(191);
 
-        $menuPartner   = Partner::all();
-        $menuCategory  = Post::select('en_title', 'id_title', 'slug')->where('category_id', '=', 1)->get();
-        $introProfile  = Profile::findOrFail(1);
-        View::share(['menuPartner' => $menuPartner, 'menuCategory' => $menuCategory, 'introProfile' => $introProfile]);
-    }
+		$menuPartner   = Partner::all();
+		$menuCategory  = Post::select('en_title', 'id_title', 'slug')->where('category_id', '=', 1)->get();
+		$introProfile  = Profile::findOrFail(1);
+		View::share(['menuPartner' => $menuPartner, 'menuCategory' => $menuCategory, 'introProfile' => $introProfile]);
+	
+	}
 }

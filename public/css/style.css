@@ -625,7 +625,7 @@ input:-moz-placeholder {
     padding-right: 15px;
 }
 
-.form-area .form-group a {
+.form-area .form-group a, .form-area .form-group button {
     background-color: #b1986f78;
     border: 2px solid #b1986f3d;
     text-align: center;
@@ -2848,6 +2848,19 @@ Blog Details CSS
     background-color: #0b1d37d1;
     padding: 0 10px;
     padding-bottom: 3px;
+}
+
+.widget-instagram a {
+	border-radius: 5px;
+	display: inline-block;
+	font-size: 15px;
+	font-weight: 600;
+	letter-spacing: .02em;
+	line-height: 19px;
+	padding: 15px 24px;
+	white-space: nowrap;
+	background-color: #01e675;
+	color: #fff !important;
 }
 
 .footer-section .instagram-widget .widget-instagram .grid {

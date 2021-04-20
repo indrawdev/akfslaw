@@ -5,7 +5,7 @@ return [
     'first-name' => 'First Name',
     'last-name' => 'Last Name',
     'email' => 'Email',
-    'website' => 'Website',
+    'phone' => 'Phone',
     'messages' => 'Write Your Messages....',
     'address' => 'Address',
     'send-message' => 'Send Message',
