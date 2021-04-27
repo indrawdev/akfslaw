@@ -4,6 +4,8 @@ $(document).ready(function () {
 		var datastring = $('#contactform').serialize();
 
 		document.getElementById("submit").disabled = true;
+
+		Swal.showLoading();
 		
 		$.ajax({
 			type: 'POST',
@@ -29,6 +31,7 @@ $(document).ready(function () {
 					});
 				}
 				document.getElementById("submit").disabled = false;
+				Swal.hideLoading();
 			},
 			error: function (json) {
 				if (json.status == 422) {
@@ -41,6 +44,7 @@ $(document).ready(function () {
 				}
 
 				document.getElementById("submit").disabled = false;
+				Swal.hideLoading();
 			}
 		});
 	});

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\ContactSent;
+use App\Mail\ContactThank;
 use App\Contact;
 
 class ContactController extends Controller
@@ -26,7 +27,8 @@ class ContactController extends Controller
 		$contact->message = $request->message;
 		$contact->save();
 
-		// Mail::to('support@akfslaw.com')->send(new ContactSent($contact));
+		Mail::to('indra@ide.web.id')->send(new ContactSent($contact));
+		Mail::to($request->email)->send(new ContactThank($contact));
 
 		return $contact->toArray();
 

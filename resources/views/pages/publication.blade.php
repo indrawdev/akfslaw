@@ -18,10 +18,11 @@
 <section class="service-details-section">
 	<div class="container">
 		<div class="row">
-			@foreach($pubs as $row)
-				{{ $row->title }}
-				{{ $row->description }}
-			@endforeach
+			<ul>
+				@foreach($pubs as $row)
+				<li><strong>{{ $row->title }}</strong> | {{ $row->description }}</li>
+				@endforeach
+			</ul>
 		</div>
 	</div>
 </section>

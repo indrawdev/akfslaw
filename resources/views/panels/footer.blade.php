@@ -13,11 +13,9 @@
 						{!! $introProfile->id_content !!}
 						@endif
 						<ul>
+							<li><a href="https://www.instagram.com/akfslaw" target="_blank"><i class="fa fa-linkedin"></i></a></li>
 							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
 							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-							<li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
-							<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-							<li><a href="#"><i class="fa fa-google-plus-square"></i></a></li>
 						</ul>
 					</div>
 				</div>

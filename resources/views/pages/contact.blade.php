@@ -3,7 +3,6 @@
 @section('title', __('menu.contact'))
 
 @section('content')
-
 <section class="inner-area">
 	<div class="container">
 		<div class="row">
